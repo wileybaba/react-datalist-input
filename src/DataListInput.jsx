@@ -54,6 +54,7 @@ const DataListInput = ({
   onDropdownOpen,
   onInput,
   onSelect,
+  label,
   placeholder,
   requiredInputLength,
   suppressReselect,
@@ -421,6 +422,7 @@ const DataListInput = ({
         onKeyDown={onHandleKeydown}
         type="text"
         className={`autocomplete-input ${inputClassName}`}
+        label={label}
         placeholder={placeholder}
         value={currentInput}
         aria-label="Search"
